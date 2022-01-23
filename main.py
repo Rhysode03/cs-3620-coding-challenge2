@@ -1,14 +1,28 @@
 # Part 1
+def bmi():
+    weight = float(input("What is your weight(kg):"))
+    height = float(input("What is your height(m):"))
+    m = round(weight / (height * height), 2)
+    print(m)
 
-def bmi(int_validation, w, h): {
-        input("What is your weight(kg)"):
-        input("What is your height(m)"),
-        int_validation():
-        while True:
-            try:
-                value = float(input())
-            except ValueError:
-                print('Input was not a number. Please input a number')
-                continue
-            result=(round(w / (h * h), 2))
-}
+
+bmi()
+
+
+# Part 2
+
+def split(a, b):
+    try:
+        print(a / b)
+    except ZeroDivisionError:
+        print('Cannot divide by zero.')
+
+
+num1 = int(input("Enter a number:"))
+num2 = int(input("Enter a number to divide by:"))
+split(num1, num2)
+
+
+
+# Part 3
+
