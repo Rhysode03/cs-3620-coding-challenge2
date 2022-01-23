@@ -1,19 +1,14 @@
 # Part 1
 
-def int_validation(prompt):
-    while True:
-        try:
-            value = int(input(prompt))
-        except ValueError:
-            print('Input was not a number. Please input a number')
-            continue
-        return value
-
-
-w = int_validation(input("What is your weight(kg)"))
-h = int_validation(input("What is your height(m)"))
-
-
-def bmi(value): {
-    return round(w / (h * h), 2))
+def bmi(int_validation, w, h): {
+        input("What is your weight(kg)"):
+        input("What is your height(m)"),
+        int_validation():
+        while True:
+            try:
+                value = float(input())
+            except ValueError:
+                print('Input was not a number. Please input a number')
+                continue
+            result=(round(w / (h * h), 2))
 }
