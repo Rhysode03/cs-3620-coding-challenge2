@@ -41,39 +41,19 @@ file.close()
 # Part 4
 
 def product(p):
-    products = [
-        {
-            'id': 1,
-            'Name': 'Bike',
-            'Price': 10.00,
-        },
-        {
-            'id': 2,
-            'Name': 'Car',
-            'Price': 50.00,
-        },
-        {
-            'id': 3,
-            'Name': 'Shoes',
-            'Price': 3.00,
-        },
-        {
-            'id': 4,
-            'Name': 'Belt',
-            'Price': 5.00,
-        },
-        {
-            'id': 5,
-            'Name': 'Saw',
-            'Price': 15.00,
-        }
-    ]
-    case: 'id' == 1
-    print(1 in products)
-    case: 2
-    print(2 in products)
-    case: 3
-    print('id' == 3 in products)
+    products = {
+        'bike': 10.00,
+        'car': 50.00,
+        'shoes': 3.00,
+        'belt': 5.00,
+        'saw': 15.00
+    }
+    print(products.get(p, 'That is not a product.'))
 
 
-product(input("Choose a product from 1-5:"))
+product(input("Choose a product to view price:"))
+
+# Part 5
+
+odd = list(x for x in range(1, 101) if x % 3 == 0)
+print(odd)
